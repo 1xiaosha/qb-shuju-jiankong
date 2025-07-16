@@ -19,16 +19,7 @@
 2. export_to_json.py（导出近30天数据到 public/traffic.json）
 3. public/index.html（前端图表页面）   
 4. docker-compose.yml（Nginx 显示图表网页）
-version: '3'
-services:
-  qb-shuju-jiankong-web:
-    image: nginx:alpine
-    container_name: qb-shuju-jiankong-web
-    ports:
-      - "8181:80"
-    volumes:
-      - /volume1/docker/qb-shuju-jiankong/public:/usr/share/nginx/html:ro
-    restart: unless-stopped
+
 
 浏览器访问：http://IP:8181
 
